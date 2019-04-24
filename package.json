@@ -1,7 +1,7 @@
 {
-  "name": "React-Googlebooks",
+  "name": "greenhouse-garden-helper",
   "version": "1.0.0",
-  "description": "Unit-20 Homework",
+  "description": "Project 3",
   "main": "server.js",
   "scripts": {
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
@@ -12,7 +12,7 @@
     "build": "cd client && npm run build",
     "heroku-postbuild": "npm run build"
   },
-  "homepage" : "http://mysterious-tor-63077.herokuapp.com",
+  "homepage" : "https://greenhouse-garden-helper.herokuapp.com",
   "author": "",
   "license": "ISC",
   "devDependencies": {

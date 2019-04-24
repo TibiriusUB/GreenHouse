@@ -19,7 +19,7 @@ class GreenHouse extends Component {
     sciName: "",
     href: "",
     idNo: "",
-    thunbnail: ""
+    thumbnail: ""
   };
 
   componentDidMount() {

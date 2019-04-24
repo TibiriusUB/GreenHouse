@@ -1,7 +1,7 @@
 {
-  "name": "mern",
+  "name": "greenhouse-garden-helper",
   "version": "0.1.0",
-  "description": "Mern Demo",
+  "description": "Project 3",
   "private": true,
   "proxy": "http://localhost:3001/",
   "dependencies": {
