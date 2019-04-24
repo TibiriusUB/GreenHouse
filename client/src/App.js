@@ -13,7 +13,8 @@ function App() {
         <Nav />
         <Switch>
           <Route exact path="/testing" component={LandingPage} />
-          <Route exact path="/" component={GreenHouse} />
+          <Route exact path="/" component={Login} />
+          <Route exact path="/login" component={Login} />
           <Route exact path="/plants" component={GreenHouse} />
           <Route exact path="/plants/:id" component={Detail} />
           <Route component={NoMatch} />

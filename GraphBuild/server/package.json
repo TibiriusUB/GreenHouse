@@ -1,0 +1,47 @@
+{
+  "name": "greenhouse-server",
+  "version": "1.0.0",
+  "description": "Server-side Apollo-GraphiQL pairing for a Node server to React frontend pairng ",
+  "main": "nodemon src/index.js",
+  "scripts": {
+    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+    "start:prod": "node src/index.js",
+    "start:dev": "concurrently \"nodemon --ignore '../client/*'\" \"npm run ../client\"",
+    "client": "cd ../client && npm run start",
+    "install": "cd ../client && npm install",
+    "build": "cd ../client && npm run build",
+    "heroku-postbuild": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TibiriusUB/GreenHouse.git"
+  },
+  "keywords": [
+    "Project-3",
+    "Apollo",
+    "GraphiQL",
+    "React",
+    "Mongo"
+  ],
+  "author": "John Maguire, Alex M, Joe Cerankowski, Birungi Owomugisha, John Randolf",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TibiriusUB/GreenHouse/issues"
+  },
+  "homepage": "https://github.com/TibiriusUB/GreenHouse#readme",
+  "devDependencies": {
+    "concurrently": "^4.1.0",
+    "nodemon": "^1.18.11"
+  },
+  "dependencies": {
+    "apollo-connector-mongodb": "^2.0.3",
+    "apollo-datasource": "^0.3.1",
+    "apollo-datasource-rest": "^0.3.2",
+    "apollo-server": "^2.4.8",
+    "apollo-server-testing": "^2.4.8",
+    "dotenv": "^7.0.0",
+    "graphql": "^14.2.1",
+    "if-env": "^1.0.4",
+    "isemail": "^3.2.0"
+  }
+}
