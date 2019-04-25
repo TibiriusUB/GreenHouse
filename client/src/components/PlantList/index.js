@@ -2,21 +2,21 @@ import React from "react";
 import Thumbnail from "../Thumbnail";
 import { Container, Row, Col } from "../Grid";
 
-// Exporting both RecipeList and RecipeListItem from this file
+// Exporting both PlantList and PlantListItem from this file
 
-// RecipeList renders a bootstrap list item
-export function BookList({ children }) {
-  return <ul className="list-group" key= {children.id}>{children}</ul>;
+// PlantList renders a bootstrap list item
+export function PlantList({ children }) {
+  return <ul className="list-group">{children}</ul>;
 }
+// in case of React key-based erros, copy&paste this to the ul attributes: key= {children.id}
 
-// RecipeListItem renders a bootstrap list item containing data from the recipe api call
-export function BookListItem({
+// PlantListItem renders a bootstrap list item containing data from the Trefle api call
+export function PlantListItem({
   thumbnail,
   title,
   sciName,
   idNo,
   href,
-  key
 }) {
   return (
     <li className="list-group-item">

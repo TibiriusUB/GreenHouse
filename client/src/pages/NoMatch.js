@@ -2,6 +2,8 @@ import React from "react";
 import { Col, Row, Container } from "../components/Grid";
 import Jumbotron from "../components/Jumbotron";
 
+//this is quite simply a catch-all error page
+
 function NoMatch() {
   return (
     <Container fluid>

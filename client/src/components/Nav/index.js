@@ -1,5 +1,9 @@
 import React from "react";
 
+//the Navbar is rendered at App.js and is persistant in all other pages. 
+//ALL app controls should be accessed from here throughout the app for convience. 
+//(not that this statment is set in stone, we don't even have the seach set up through here yet)
+
 function Nav() {
   return (
  

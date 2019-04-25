@@ -1,14 +1,14 @@
 const router = require("express").Router();
 const userInfo = require("./users");
 const Routes = require("./plant");
-const gardenInfo = require("./garden");
+const Garden = require("./garden");
 
 
-// User routes
+// User routes (not yet implemented)
 router.use("/user", userInfo);
 // Plant routes
 router.use("/plant", Routes);
-// Garden routes
-router.use("/garden", gardenInfo);
+// garden routes (not yet implemented)
+router.use("/garden", Garden);
 
 module.exports = router;

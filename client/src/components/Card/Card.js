@@ -1,5 +1,7 @@
 import React from 'react';
 
+//basic card for display
+
 export default function Card(props) {
     return (
         <div className="col-md-4" style={{marginTop:10, position:'relative'}}>

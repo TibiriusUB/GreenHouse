@@ -3,10 +3,10 @@ const router = require("express").Router();
 const apiRoutes = require("./api");
 const searchRoutes = require("./search");
 
-// API Routes
+// API Routes (MongoDB)
 router.use("/api", apiRoutes);
 
-// search Routes
+//REST search Routes (Trefle)
 router.use("/search", searchRoutes)
 
 // If no API routes are hit, send the React app

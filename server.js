@@ -1,5 +1,7 @@
+// dotenv to protect API keys (now added properly)
+require('dotenv').config()
+//all reqired modules added to the server
 const express = require("express");
-
 const mongoose = require("mongoose");
 const routes = require("./routes");
 const app = express();

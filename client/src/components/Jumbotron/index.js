@@ -1,5 +1,7 @@
 import React from "react";
 
+//does what it says on the box
+
 function Jumbotron({ children }) {
   return (
     <div

@@ -2,6 +2,7 @@ import React from "react";
 import "./style.css";
 
 // This file exports both the List and ListItem components
+// This is a basic setup for any list needs, use List as a wrapper for an array of ListItems. 
 
 export function List({ children }) {
   return (

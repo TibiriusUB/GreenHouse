@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import DeleteBtn from "../components/DeleteBtn";
 import Button from "../components/Button";
-import { BookList, BookListItem } from "../components/BookList";
+import { PlantList, PlantListItem } from "../components/PlantList";
 import Jumbotron from "../components/Jumbotron";
 import API from "../utils/API";
 import { Link } from "react-router-dom";
@@ -142,11 +142,11 @@ class GreenHouse extends Component {
               {!this.state.plants.length ? (
                 <h3 className="text-center">No Plants to Display,{this.state.plants}</h3>
               ) : (
-                  <BookList>
+                  <PlantList>
                     {this.state.plants.map(listing => {
                       return (
                         <div key={listing.id}>
-                          <BookListItem
+                          <PlantListItem
                             key={listing.index}
                             title={listing.common_name}
                             sciName={listing.scientific_name}
@@ -165,7 +165,7 @@ class GreenHouse extends Component {
                         </div>
                       );
                     })}
-                  </BookList>
+                  </PlantList>
                 )}
             </Col>
          

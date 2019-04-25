@@ -2,11 +2,8 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const userSchema = new Schema({
-  title: { type: String, required: true },
-  author: { type: String, required: true },
-  description: String,
-  image: String,
-  link: String,
+  name: { type: String, required: true },
+  email: { type: String, required: true },
 });
 
 const User = mongoose.model("user", userSchema);
