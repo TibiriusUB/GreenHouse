@@ -1,0 +1,36 @@
+
+  .todoListMain {
+    display: flex;
+    justify-content: center;
+    border: darkgreen 2px solid;
+    color: black;
+    
+  }
+  .jumbotron {
+      font-size: 36px;
+  }
+  
+  .grow {
+      width: 200%;
+      font-size: 22px;
+      margin-left: 10px;
+  }
+  .newbtn {width:150px;
+      border: white solid 4px;
+      color:white;
+      margin: 10px
+  }
+  .todoListMain .theList li {
+    font-size: 24px;
+    background-color: rgba(255,255,255,.5);
+    padding: 5px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: white 2px solid;
+    list-style: none;
+    transition: background-color .2s ease-out;
+  }
+  .todoListMain .theList li:hover {
+    background-color:seagreen;
+    border: white 2px solid
+  }

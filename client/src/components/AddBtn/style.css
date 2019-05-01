@@ -1,0 +1,10 @@
+.add-btn {
+    float: right;
+    color: darkgreen;
+    font-size: 40px;
+    background-color: white;
+    padding: 5px;
+  }
+  .add-btn:hover {
+      background-color: forestgreen;
+  }
