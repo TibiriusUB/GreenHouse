@@ -5,6 +5,7 @@ import Detail from "./pages/Detail";
 import NoMatch from "./pages/NoMatch";
 import Nav from "./components/Nav";
 import LandingPage from "./components/LandingPage/LandingPage";
+import ToDoList from "./components/TodoList";
 //initial app build starts here, this space is being left to the page routes for sake of ease
 function App() {
   return (
@@ -21,7 +22,9 @@ function App() {
           <Route exact path="/plants/:id" component={Detail} />
           <Route component={NoMatch} />
         </Switch>
-      </div>
+        
+          <ToDoList></ToDoList>
+          </div>
     </Router>
   );
 }
