@@ -49,9 +49,9 @@ class TodoList extends Component {
                 <div className="header form-group form-inline">
                     <label>To-Do List</label>
                     <form onSubmit={this.addItem}>
-                        <input ref={(a) => this._inputElement = a} className="grow form-control input-lg" placeholder="What Does Your Garden Need?">
+                        <input ref={(a) => this._inputElement = a} className="grow form-control input-lg" placeholder="My Garden Needs...?">
                         </input>
-                        <button className="btn btn-outline-light  my-2 my-sm-0 btn-lg" type="submit" >Grow</button>
+                        <button className="btn newbtn btn-outline-light  my-2 my-sm-0 btn-lg" type="submit" >Grow</button>
                     </form>
                 </div>
                 <br></br>
